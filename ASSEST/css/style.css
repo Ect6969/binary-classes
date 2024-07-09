@@ -1,0 +1,157 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background: url('https://68.media.tumblr.com/a50b25a17a28aa70feda8826f672fae1/tumblr_nvnhc3XFIC1txt22yo1_500.gif') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.navbar {
+    width: 100%;
+    background-color: #f8f9fa;
+    padding: 0.5rem 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #000;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.navbar-brand img.logo {
+    margin-right: 0.5rem;
+}
+
+.navbar-brand:hover {
+    text-decoration: none;
+    color: #000;
+}
+
+.login-container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border: 2px solid white;
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+
+h1 {
+    color: #fff;
+}
+
+label {
+    color: #fff;
+    display: block;
+    margin-top: 10px;
+    text-align: left;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: rgba(2, 6, 255, 0.613);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+    .login-container {
+        padding: 10px;
+        max-width: 90%;
+    }
+
+    input, button {
+        padding: 8px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 768px) {
+    .login-container {
+        padding: 15px;
+        max-width: 80%;
+    }
+
+    input, button {
+        padding: 9px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-brand {
+        font-size: 1rem;
+    }
+
+    .navbar-brand img.logo {
+        width: 24px;
+        height: 20px;
+        margin-right: 0.25rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0.5rem;
+    }
+
+    .navbar {
+        padding: 0.5rem;
+    }
+
+    .navbar-brand {
+        font-size: 0.875rem;
+    }
+
+    .navbar-brand img.logo {
+        width: 20px;
+        height: 16px;
+        margin-right: 0.25rem;
+    }
+}
